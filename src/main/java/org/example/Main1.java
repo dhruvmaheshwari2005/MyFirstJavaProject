@@ -8,8 +8,8 @@ public class Main1 {
         String userName = "root";
         String password = "";
 //      String name = "Amit";
-      String name = "'OR 1=1 OR name = '";
-      String query = "SELECT * FROM emp WHERE Name = ? AND Age = ?";
+        String name = "'OR 1=1 OR name = '";
+        String query = "SELECT * FROM emp WHERE Name = ? AND Age = ?";
         try(
                 Connection connection = DriverManager.getConnection(path, userName, password);
                 PreparedStatement stmt = connection.prepareStatement(query);
